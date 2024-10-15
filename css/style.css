@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(231, 231, 231);
+    margin: 0px;
+}
+
+.hero {
+    min-height: 700px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0, rgba(0,0,0,0) ,rgba(0, 0, 0, 0.5)), url(../images/zootopia.jpg);
+    background-size: cover;
+    padding: 32px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 32px;
+    color: aliceblue;
+    margin: 0 auto 0 0;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1600px;
+}
+
+nav > ul {
+    display: flex;
+    gap: 32px;
+    list-style-type: none;
+    font-size: 24px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    padding-inline-start: 0;
+}
+
+.info {
+    width: 80%;
+    max-width: 1600px;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+}
+
+.card > button {
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    background: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.card > button:hover {
+    color: rgb(143, 65, 20);
+    background-color: rgb(235, 235, 235);
+    transition: 0.5s;
+}
+
+.card > p {
+    margin: 0 0 16px 0;
+}
+
+.card > img {
+    width: 32px;
+    height: auto;
+    margin-bottom: 16px;
+}
+
+.info > p {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.card {
+    border: 1px solid rgb(255, 255, 255, 0.4);
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 200px;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    text-align: center;
+}
+
+.card > p {
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(102, 102, 102);
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+#sobre > img {
+    width: 100%;
+    max-width: 1000px;
+    min-width: 200px;
+    height: auto;
+    margin-top: 32px;
+}
+
+#sobre > h2 {
+    font-weight: 500;
+}
+
+#sobre > p {
+    margin: 2px;
+    max-width: 1000px;
+}
+
+section {
+    padding: 32px;
+}
+
+#sobre {
+    width: 70%;
+    min-width: 275px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    flex: 1 1 auto;
+}
+
+aside {
+    width: 30%;
+    min-width: 275px;
+    padding: 16px;
+    box-sizing: border-box;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(235, 213, 189);
+}
+
+aside > h2 {
+    font-weight: 300;
+}
+
+aside > ul {
+    padding-inline-start: 0;
+    list-style-type: none;
+}
+
+aside > ul > li {
+    margin-bottom: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: rgb(199, 87, 21);
+}
+
+#uso {
+    background-color: rgb(212, 212, 212);
+    color: rgb(102, 102, 102);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 1920px;
+}
+
+#uso > h2 {
+    color: rgb(104, 75, 75);
+    font-size: 32px;
+    text-align: center;
+}
+
+.demo {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    padding: 32px;
+}
+
+.demo > p {
+    margin: 2px;
+    max-width: 1000px;
+}
+
+
+video {
+    width: 90%;
+    max-width: 1366px;
+    height: auto;
+    border-radius: 16px;
+    margin-bottom: 32px;
+}
+
+code {
+    font-size: 16px;
+}
+
+footer {
+    height: 50px;
+    background-color: rgb(73, 73, 73);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+}
