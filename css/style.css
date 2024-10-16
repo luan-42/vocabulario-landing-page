@@ -111,7 +111,6 @@ nav > ul {
     display: flex;
     flex-wrap: wrap;
     color: rgb(102, 102, 102);
-    max-width: 1920px;
     margin: 0 auto;
 }
 
@@ -186,7 +185,6 @@ a:hover {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    max-width: 1920px;
 }
 
 #uso > h2 {
@@ -218,10 +216,6 @@ video {
     height: auto;
     border-radius: 16px;
     margin-bottom: 32px;
-}
-
-code {
-    font-size: 16px;
 }
 
 footer {
