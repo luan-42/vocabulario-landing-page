@@ -8,8 +8,9 @@ body {
 
 .hero {
     min-height: 700px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0, rgba(0,0,0,0) ,rgba(0, 0, 0, 0.5)), url(../images/zootopia.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0, rgba(0,0,0,0) ,rgba(0, 0, 0, 0.5)), url(../images/background.jpeg);
     background-size: cover;
+    background-position: center;
     padding: 32px 16px;
     display: flex;
     flex-direction: column;
@@ -20,7 +21,19 @@ body {
     font-size: 32px;
     color: aliceblue;
     margin: 0 auto 0 0;
+    user-select: none;
 }
+
+.logo:hover .sinal {
+    display: inline-block;
+    transform: rotate(90deg);
+    transition: 0.5s;
+}
+
+.logo:hover a {
+    color: inherit;
+}
+
 
 header {
     display: flex;
@@ -59,7 +72,7 @@ nav > ul {
 }
 
 .card > button:hover {
-    color: rgb(143, 65, 20);
+    color: rgb(20, 143, 92);
     background-color: rgb(235, 235, 235);
     transition: 0.5s;
 }
@@ -92,6 +105,7 @@ nav > ul {
 .card {
     border: 1px solid rgb(255, 255, 255, 0.4);
     background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
     border-radius: 8px;
     width: 200px;
     display: flex;
@@ -110,8 +124,9 @@ nav > ul {
 .box {
     display: flex;
     flex-wrap: wrap;
-    color: rgb(102, 102, 102);
+    color: rgb(77, 77, 77);
     margin: 0 auto;
+    background-color: rgb(201, 201, 201);
 }
 
 #sobre > img {
@@ -119,7 +134,7 @@ nav > ul {
     max-width: 1000px;
     min-width: 200px;
     height: auto;
-    margin-top: 32px;
+    margin: 32px 0;
 }
 
 #sobre > h2 {
@@ -154,7 +169,8 @@ aside {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(231, 222, 212);
+    background-color: rgb(112, 124, 113);
+    color: aliceblue;
 }
 
 aside > h2 {
@@ -176,7 +192,7 @@ a {
 }
 
 a:hover {
-    color: rgb(199, 87, 21);
+    color: rgb(100, 236, 202);
 }
 
 #uso {
