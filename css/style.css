@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Roboto", sans-serif;
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(238, 238, 238);
     margin: 0px;
 }
 
-.hero {
+.hero-section {
     min-height: 700px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0, rgba(0,0,0,0) ,rgba(0, 0, 0, 0.5)), url(../images/background.jpeg);
     background-size: cover;
@@ -40,6 +44,7 @@ header {
     flex-wrap: wrap;
     align-items: center;
     margin: 0 auto;
+    margin-bottom: 64px;
     width: 80%;
     max-width: 1600px;
 }
@@ -143,7 +148,7 @@ nav > ul {
 
 #sobre > p {
     margin: 2px;
-    max-width: 1000px;
+    max-width: 900px;
 }
 
 section {
@@ -196,41 +201,25 @@ a:hover {
 }
 
 #uso {
-    background-color: rgb(238, 238, 238);
     color: rgb(102, 102, 102);
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-#uso > h2 {
-    color: rgb(104, 75, 75);
-    font-size: 32px;
     text-align: center;
+    margin: 0 auto;
+    max-width: 1600px;
 }
 
 .demo {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid rgba(0, 0, 0, 0.2);
-    border-radius: 16px;
-    padding: 32px;
+    margin-bottom: 32px;
 }
 
 .demo > p {
     margin: 2px;
-    max-width: 1000px;
 }
 
-
 video {
-    width: 90%;
-    max-width: 1366px;
+    width: 100%;
+    max-width: 70%;
     height: auto;
-    border-radius: 16px;
+    border-radius: 8px;
     margin-bottom: 32px;
 }
 
@@ -241,4 +230,8 @@ footer {
     align-items: center;
     justify-content: center;
     color: aliceblue;
+}
+
+:root {
+    --swiper-theme-color: #1bac94;
 }

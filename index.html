@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/style.css">
     <title>Vocabulário++</title>
 </head>
 <body>
-    <div class="hero">
+    <div class="hero-section">
         <header>
-            <h1 class="logo"><a href="https://github.com/luan-42/mpv-scripts">Vocabulário<span class="sinal">+</span><span class="sinal">+</span></a></h1>
+            <h1 class="logo"><a href="">Vocabulário<span class="sinal">+</span><span class="sinal">+</span></a></h1>
             <nav>
                 <ul>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#uso">Uso</a></li>
-                    <li><a href="https://github.com/luan-42/mpv-scripts">Instalação</a></li>
+                    <li><a href="">Instalação</a></li>
                 </ul>
             </nav>
         </header>
@@ -24,17 +25,17 @@
                 <div class="card">
                     <img src = "./images/icons/bookmarks.svg" alt="bookmarks"/>
                     <p>Minere legendas de filmes e seriados sem pausar o que estiver assistindo.</p>
-                    <button type="button" onclick="window.location.href='#demo1';">Demonstração</button>
+                    <button type="button" id="saveSub">Demonstração</button>
                 </div>
                 <div class="card">
                     <img src = "./images/icons/copy.svg" alt="copy"/>
                     <p>Copie as frases mineradas para a área de transferência.</p>
-                    <button type="button" onclick="window.location.href='#demo2';">Demonstração</button>
+                    <button type="button" id="copySub">Demonstração</button>
                 </div>
                 <div class="card">
                     <img src = "./images/icons/cut.svg" alt="cut"/>
                     <p>Use o áudio das frases mineradas em conjunto com um SRS para estudar um novo idioma.</p>
-                    <button type="button" onclick="window.location.href='#demo3';">Demonstração</button>
+                    <button type="button" id="sliceMp3">Demonstração</button>
                 </div>
             </div>
         </div>
@@ -49,44 +50,53 @@
             <aside>
                 <h2>Links</h2>
                 <ul>
-                    <li><a href="https://mpv.io/">🔗 Site oficial do mpv</a></li>
                     <li><a href="https://youtu.be/eph9s3-BITs?list=PLl_7J18zHKKCwoplWshSDTDmWrvez27Qr">🔗 Mineração de sentenças</a></li>
-                    <li><a href="https://github.com/luan-42/mpv-scripts">🔗 Repositório do projeto</a></li>
+                    <li><a href="https://mpv.io/">🔗 Site do mpv</a></li>
                     <li><a href="https://apps.ankiweb.net/">🔗 Anki</a></li>
                 </ul>
             </aside>
         </div>
         <section id="uso">
-            <h2>Demonstrações</h2>
-            <div id="demo1" class="demo">
-                <h2>Como minerar legendas</h2>
-                <video controls>
-                    <source src="./demos/demo1.mp4" type="video/mp4">
-                  Seu navegador não suporta tag de video.
-                </video>
-                <p>Na demonstração, a funcionalidade é acionada pelo atalho <b>X</b>. Ela salva a legenda, juntamente com o endereço do vídeo e o tempo, em 'C:\Users\User\Documents\notes.txt'.</p>
-                <p>Além disso, é possível utilizar o tempo da legenda: basta copiá-lo para a área de transferência e, em seguida, usar o atalho <b>Ctrl+V</b> para localizar o momento exato em que a legenda aparece no vídeo.</p>
-            </div>
-            <div id="demo2" class="demo">
-                <h2>Copiar legenda para área de transferência</h2>
-                <video controls>
-                    <source src="./demos/demo2.mp4" type="video/mp4">
-                  Seu navegador não suporta tag de video.
-                </video>
-                <p>O atalho para copiar a legenda para área de transferência é <b>Ctrl+C</b>.</p>
-            </div>
-            <div id="demo3" class="demo">
-                <h2>Extrair áudio do video</h2>
-                <video controls>
-                    <source src="./demos/demo3.mp4" type="video/mp4">
-                  Seu navegador não suporta tag de video.
-                </video>
-                <p>Para extrair o áudio do vídeo, é necessário criar um loop. Existem duas opções para isso: você pode usar o atalho <b>R</b> quando há uma legenda (como demonstrado), ou utilizar a tecla <b>L</b> para definir o início e o fim do loop. Para salvar o áudio, utilize o atalho <b>Ctrl+S</b>, que o armazenará na pasta 'C:\Users\User\Music'.</p>
+            <h2>Demonstrações de uso</h2>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide demo">
+                        <video controls>
+                            <source src="./videos/saveSub.mp4" type="video/mp4">
+                        Seu navegador não suporta tag de video.
+                        </video>
+                        <p>O atalho <b>X</b> salva as legendas junto com o tempo. Você pode copiar o tempo e usar o atalho <b>Ctrl+V</b> para reproduzir o momento que a legenda aparece.</p>
+                        <p>Local: C:\Users\Username\Documents\notes.txt</p>
+                    </div>
+                    <div class="swiper-slide demo">
+                        <video controls>
+                            <source src="./videos/copySub.mp4" type="video/mp4">
+                        Seu navegador não suporta tag de video.
+                        </video>
+                        <p>O atalho <b>Ctrl+C</b> copia legendas para área de transferência.</p>
+                    </div>
+                    <div class="demo swiper-slide demo">
+                        <video controls>
+                            <source src="./videos/sliceMp3.mp4" type="video/mp4">
+                        Seu navegador não suporta tag de video.
+                        </video>
+                        <p>O atalho <b>R</b> cria um loop usando o inicio e o fim da legenda.</p>
+                        <p>O atalho <b>L</b> cria loops de forma manual e também limpa loops criados.</p>
+                        <p>O atalho <b>Ctrl+S</b> salva o áudio do loop.</p>
+                        <p>Local: C:\Users\Username\Musics\</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </section>
     </main>
     <footer>
         <p>Copyright &#169 Luan Ferreira 2024</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 </html>
