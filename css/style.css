@@ -53,7 +53,7 @@ nav > ul {
     display: flex;
     gap: 32px;
     list-style-type: none;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.9);
     margin: 0;
@@ -131,7 +131,7 @@ nav > ul {
     flex-wrap: wrap;
     color: rgb(77, 77, 77);
     margin: 0 auto;
-    background-color: rgb(201, 201, 201);
+    background-color: rgb(226, 226, 226);
 }
 
 #sobre > img {
@@ -144,6 +144,7 @@ nav > ul {
 
 #sobre > h2 {
     font-weight: 500;
+    color: #2e423c;
 }
 
 #sobre > p {
@@ -208,7 +209,7 @@ a:hover {
 }
 
 .demo {
-    margin-bottom: 32px;
+    margin-bottom: 48px;
 }
 
 .demo > p {
@@ -217,10 +218,53 @@ a:hover {
 
 video {
     width: 100%;
-    max-width: 70%;
+    max-width: 80%;
     height: auto;
     border-radius: 8px;
     margin-bottom: 32px;
+}
+
+#dicas  {
+    background-color: rgb(226, 226, 226);
+    min-height: 600px;
+    text-align: center;
+}
+ 
+#movies {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 32px;
+    max-width: 1600px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.movie {
+    max-width: 360px;
+    border-top: 4px solid #2e423c;
+    background-color: #ffffff;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.movie > img {
+    max-height: 440;
+    width: auto;
+}
+
+.movie > h3 {
+    margin-bottom: 0;
+}
+
+.movie > p:first-of-type {
+    color: rgba(0, 0, 0,0.5);
+    font-weight: 600;
+    margin-top: 4px;
+    margin-bottom: 16px;
+
 }
 
 footer {

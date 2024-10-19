@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>Vocabulário++</title>
 </head>
@@ -15,7 +16,8 @@
                 <ul>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#uso">Uso</a></li>
-                    <li><a href="">Instalação</a></li>
+ 
+                    <li><a href="">Contato</a></li>
                 </ul>
             </nav>
         </header>
@@ -45,7 +47,7 @@
             <section id="sobre">
                 <h2>O que é o Vocabulário++ ?</h2>
                 <p>O Vocabulário++ é um conjunto de funcionalidades desenvolvido para o reprodutor de mídia mpv. Essas funcionalidades foram desenvolvidas usando JavaScript, elas são úteis para mineração de sentenças, que é o processo de extrair e analisar frases de textos ou discursos.</p>
-                <img src="./images/Mpv_0.32_on_Linux.png" alt="mpv player reproduzindo um vídeo">
+                <img src="./images/Mpv_0.32_on_Linux.png" alt="mpv player reproduzindo um vídeo" data-aos="fade-right">
             </section>
             <aside>
                 <h2>Links</h2>
@@ -58,14 +60,15 @@
         </div>
         <section id="uso">
             <h2>Demonstrações de uso</h2>
-            <div class="swiper">
+            <div class="swiper"  data-aos="fade-left">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide demo">
                         <video controls>
                             <source src="./videos/saveSub.mp4" type="video/mp4">
                         Seu navegador não suporta tag de video.
                         </video>
-                        <p>O atalho <b>X</b> salva as legendas junto com o tempo. Você pode copiar o tempo e usar o atalho <b>Ctrl+V</b> para reproduzir o momento que a legenda aparece.</p>
+                        <p>O atalho <b>X</b> salva as legendas junto com o tempo.</p>
+                        <p> Você pode copiar o tempo e usar o atalho <b>Ctrl+V</b> para reproduzir o momento em que a legenda aparece.</p>
                         <p>Local: C:\Users\Username\Documents\notes.txt</p>
                     </div>
                     <div class="swiper-slide demo">
@@ -73,7 +76,7 @@
                             <source src="./videos/copySub.mp4" type="video/mp4">
                         Seu navegador não suporta tag de video.
                         </video>
-                        <p>O atalho <b>Ctrl+C</b> copia legendas para área de transferência.</p>
+                        <p>O atalho <b>Ctrl+C</b> copia as legendas para a área de transferência.</p>
                     </div>
                     <div class="demo swiper-slide demo">
                         <video controls>
@@ -92,11 +95,19 @@
                 <div class="swiper-button-next"></div>
             </div>
         </section>
+        <section id="dicas">
+            <h2>Recomendações de séries</h2>
+            <p>Aqui estão algumas escolhas para as <b>6 melhores séries para aprender inglês:</b></p>
+            <div id="movies">
+            </div>
+
+        </section>
     </main>
     <footer>
         <p>Copyright &#169 Luan Ferreira 2024</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/app.js"></script>
 </body>
 </html>
