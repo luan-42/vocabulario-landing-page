@@ -43,7 +43,7 @@ document.getElementById("sliceMp3").onclick = () => {
 AOS.init();
 
 async function getMovie(title, callback) {
-    const url = `http://www.omdbapi.com/?apikey=c9c66c8e&t=${title}`;
+    const url = `https://www.omdbapi.com/?apikey=c9c66c8e&t=${title}`;
     const movie = document.createElement('div');
     movie.className = "movie";
     movie.setAttribute("data-aos", "zoom-in-up");
