@@ -51,7 +51,7 @@ header {
 
 nav > ul {
     display: flex;
-    gap: 32px;
+    gap: 16px;
     list-style-type: none;
     font-size: 20px;
     font-weight: 300;
@@ -265,6 +265,10 @@ video {
     margin-top: 4px;
     margin-bottom: 16px;
 
+}
+
+#contato {
+    text-align: center;
 }
 
 footer {

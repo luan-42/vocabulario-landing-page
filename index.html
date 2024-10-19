@@ -11,13 +11,12 @@
 <body>
     <div class="hero-section">
         <header>
-            <h1 class="logo"><a href="">Vocabulário<span class="sinal">+</span><span class="sinal">+</span></a></h1>
+            <h1 class="logo"><a href="#dicas">Vocabulário<span class="sinal">+</span><span class="sinal">+</span></a></h1>
             <nav>
                 <ul>
                     <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#uso">Uso</a></li>
- 
-                    <li><a href="">Contato</a></li>
+                    <li><a href="https://github.com/luan-42/mpv-scripts">Instalação</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
         </header>
@@ -100,12 +99,22 @@
             <p>Aqui estão algumas escolhas para as <b>6 melhores séries para aprender inglês:</b></p>
             <div id="movies">
             </div>
-
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <form id="contact-form">
+                <label for="name">Nome: <input type="text" name="user_name" id="name"></label>
+                <label for="email">Email: <input  type="email" name="user_email" id="email"></label>
+                <label for="phone">Telefone: <input type="text" name="phone" id="phone"></label>
+                <label for="message">Mensagem: <textarea name="message" id="message"></textarea></label>
+                <input type="submit" value="Send">
+            </form>
         </section>
     </main>
     <footer>
         <p>Copyright &#169 Luan Ferreira 2024</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/app.js"></script>

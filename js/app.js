@@ -94,3 +94,17 @@ recommendations.forEach(title => {
         movies.appendChild(movie);
     });
 });
+
+emailjs.init({
+    publicKey: "t6-c-0nFGk7z5m-wx",
+});
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    emailjs.sendForm('contact_service', 'contact_form', this)
+        .then(() => {
+            window.alert('Mensagem enviada com sucesso!');
+        }, (error) => {
+            window.alert('Falhou...', error);
+        });
+});
