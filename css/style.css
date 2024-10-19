@@ -283,3 +283,9 @@ footer {
 :root {
     --swiper-theme-color: #1bac94;
 }
+
+@media (max-width: 950px) {
+    .swiper-button-prev,.swiper-button-next {
+        display: none;
+    }
+}
