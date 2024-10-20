@@ -40,6 +40,8 @@ document.getElementById("sliceMp3").onclick = () => {
       videos[2].play();
 };
 
+document.getElementById("install").onclick = () => {window.location.href = "https://github.com/luan-42/mpv-scripts"};
+
 AOS.init();
 
 async function getMovie(title, callback) {
@@ -101,10 +103,17 @@ emailjs.init({
 
 document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
-    emailjs.sendForm('contact_service', 'contact_form', this)
+    const nome = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const mensagem = document.getElementById("message").value;
+    if (nome === "" || email === "" || mensagem === "") {
+        window.alert("Preencha todos os campos!");
+    } else {
+        emailjs.sendForm('contact_service', 'contact_form', this)
         .then(() => {
             window.alert('Mensagem enviada com sucesso!');
         }, (error) => {
             window.alert('Falhou...', error);
         });
+    }
 });

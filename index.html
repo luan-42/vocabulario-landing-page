@@ -46,6 +46,7 @@
             <section id="sobre">
                 <h2>O que é o Vocabulário++ ?</h2>
                 <p>O Vocabulário++ é um conjunto de funcionalidades desenvolvido para o reprodutor de mídia mpv. Essas funcionalidades foram desenvolvidas usando JavaScript, elas são úteis para mineração de sentenças, que é o processo de extrair e analisar frases de textos ou discursos.</p>
+                <button type="button" id="install"><img src="./images/github.png" alt="logo GitHub" width="32px">Instale agora!</button>
                 <img src="./images/Mpv_0.32_on_Linux.png" alt="mpv player reproduzindo um vídeo" data-aos="flip-left">
             </section>
             <aside>
@@ -59,33 +60,39 @@
         </div>
         <section id="uso">
             <h2>Demonstrações de uso</h2>
-            <div class="swiper" data-aos="zoom-in-down">
+            <div class="swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide demo">
-                        <video controls>
+                        <video controls data-aos="flip-right">
                             <source src="./videos/saveSub.mp4" type="video/mp4">
                         Seu navegador não suporta tag de video.
                         </video>
-                        <p>O atalho <b>X</b> salva as legendas junto com o tempo.</p>
-                        <p> Você pode copiar o tempo e usar o atalho <b>Ctrl+V</b> para reproduzir o momento em que a legenda aparece.</p>
-                        <p>Local: C:\Users\Username\Documents\notes.txt</p>
+                        <div class="desc">
+                            <p>O atalho <b>X</b> salva as legendas junto com o tempo.</p>
+                            <p> Você pode copiar o tempo e usar o atalho <b>Ctrl+V</b> para reproduzir o momento em que a legenda aparece.</p>
+                            <p>Local: C:\Users\Username\Documents\notes.txt</p>
+                        </div>
                     </div>
                     <div class="swiper-slide demo">
-                        <video controls>
+                        <video controls data-aos="flip-right">
                             <source src="./videos/copySub.mp4" type="video/mp4">
                         Seu navegador não suporta tag de video.
                         </video>
-                        <p>O atalho <b>Ctrl+C</b> copia as legendas para a área de transferência.</p>
+                        <div class="desc">
+                            <p>O atalho <b>Ctrl+C</b> copia as legendas para a área de transferência.</p>
+                        </div>
                     </div>
                     <div class="demo swiper-slide demo">
-                        <video controls>
+                        <video controls data-aos="flip-right">
                             <source src="./videos/sliceMp3.mp4" type="video/mp4">
                         Seu navegador não suporta tag de video.
                         </video>
-                        <p>O atalho <b>R</b> cria um loop usando o inicio e o fim da legenda.</p>
-                        <p>O atalho <b>L</b> cria loops de forma manual e também limpa loops criados.</p>
-                        <p>O atalho <b>Ctrl+S</b> salva o áudio do loop.</p>
-                        <p>Local: C:\Users\Username\Musics\</p>
+                        <div class="desc">
+                            <p>O atalho <b>R</b> cria um loop usando o inicio e o fim da legenda.</p>
+                            <p>O atalho <b>L</b> cria loops de forma manual e também limpa loops criados.</p>
+                            <p>O atalho <b>Ctrl+S</b> salva o áudio do loop.</p>
+                            <p>Local: C:\Users\Username\Musics\</p>
+                        </div>
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
@@ -102,17 +109,18 @@
         </section>
         <section id="contato">
             <h2>Contato</h2>
-            <form id="contact-form">
-                <label for="name">Nome: <input type="text" name="user_name" id="name"></label>
-                <label for="email">Email: <input  type="email" name="user_email" id="email"></label>
-                <label for="phone">Telefone: <input type="text" name="phone" id="phone"></label>
-                <label for="message">Mensagem: <textarea name="message" id="message"></textarea></label>
-                <input type="submit" value="Send">
+            <form id="contact-form" data-aos="flip-left">
+                <label>Nome: <input type="text" name="user_name" id="name"></label>
+                <label>Email: <input  type="email" name="user_email" id="email"></label>
+                <label>Mensagem:</label>
+                <textarea name="message" id="message"></textarea>
+                <input type="submit" value="Enviar" id="send">
             </form>
         </section>
     </main>
     <footer>
         <p>Copyright &#169 Luan Ferreira 2024</p>
+        <a href=""><img src="./images/github.png" width="16px"></a>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
